@@ -1,0 +1,148 @@
+@mapWidth: 720px;
+@mapHeight: 480px;
+@squareSize: 60px;
+
+@redColor: #c00;
+@backColor: #000;
+@greenColor: #0c0;
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+
+.comrade-statistics-table {
+    td {
+      padding-right: 10px;
+
+      &.critical-hit {
+        color: @redColor;
+        font-size: 24px;
+      }
+    }
+}
+
+
+.map {
+  .clearfix;
+
+  position: relative;
+  width: @mapWidth;
+  height: @mapHeight;
+
+
+  .game-info {
+    position: absolute;
+    display: none;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .85);
+    z-index: 2000;
+
+    &.active {
+      display: block;
+    }
+
+    h3 {
+      padding: 10 0 15px 0;
+      text-align: center;
+    }
+
+    p {
+      padding: 0 20px;
+      color: @greenColor;
+
+    }
+  }
+
+  .communal-apartment {
+    float: left;
+    width: 40px;
+    height: @mapHeight;
+    border: 2px solid @redColor;
+    box-sizing: border-box;
+  }
+
+  .battle-field {
+    float: left;
+    position: relative;
+    width: @mapWidth - 80px;
+    height: @mapHeight;
+    box-sizing: border-box;
+    border: 2px solid @redColor;
+
+
+    .red-comrade, .bourgeois {
+      position: absolute;
+      width: @squareSize;
+      height: @squareSize;
+      border: 1px solid #fff;
+      box-sizing: border-box;
+      background-size: @squareSize;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    .red-comrade {
+      top: 0;
+      left: 0;
+      background-image: url('/img/kill_bourgeois/red_comrade.png');
+      z-index: 1000;
+
+      &.shooting {
+        background-position: 0 -60px;
+      }
+    }
+
+    .bourgeois {
+      right: 0;
+      bottom: 0;
+      background-image: url('/img/kill_bourgeois/bourgeois.png');
+
+      .bourgeois-health {
+        position: absolute;
+        padding: 2px;
+        top: 0;
+        left: 0;
+        color: @backColor;
+        font: 400 10px arial;
+        background: #fff;
+
+      }
+
+    }
+
+    .isHitting {
+      background-position: 0 -60px;
+    }
+
+    .dead-bourgeois {
+      .bourgeois-health {
+        display: none;
+      }
+
+      color: @redColor;
+      background-position: 0 -120px;
+    }
+  }
+
+  .restaurant {
+    float: left;
+    width: 40px;
+    height: @mapHeight;
+    border: 2px solid @redColor;
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,9 @@
+<div ng-controller="ProjectsController">
+<h2>projects</h2>
+        <p>This is my new project list</p>
+        <ul>
+            <li ng-repeat="project in projectList">
+                <a href="{{ project.url }}" title="{{ project.description }}">{{ project.name }}</a>
+            </li>
+        </ul>
+</div>

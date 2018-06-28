@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	
+	<title>Canvas clock</title>
+	
+	<link rel="stylesheet" href="../css/main.css" />
+	
+	<!--<script type="text/javascript" src="libs/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="libs/jquery-ui-1.8.24.custom.min.js"></script>-->
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+	<script src="../js/canvas-clock.js"></script>
+	
+	<script type="text/javascript">	
+	
+	
+		window.onload = function () {
+			$('#div-canvas-clock').canvasClock({radius : 50});
+		}
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+		<h1>Canvas clock</h1>
+		<p class="description">
+			This is jquery ui widget. If you want to add this widget on your page you need.
+			<ol type=1>
+				<li>Download this <a href="../js/canvas-clock.js">script</a></li>
+				<li>Add in you html document this scripts
+					<ul class="code">					
+						<li>&lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js&quot;&gt;&lt;/script&gt;</li>
+						<li>&lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js&quot;&gt;&lt;/script&gt;</li>
+						<li>&lt;script src=&quot;<span class="attention">Path to you js file</span>/canvas-clock.js&quot;&gt;&lt;/script&gt;</li>
+					</ul>				
+				</li>
+				<li>
+					Add html elemnt into your page. This will containter for widget. On onload script write code like this
+					<ul class="code">
+						<li>
+							$(&quot;element&quot;).canvasClock({radius : 100});
+						</li>
+					</ul>
+				</li>
+				<li>Enjoy!</li>
+			</ol>
+		</p>
+		<div id="div-canvas-clock">
+		</div>
+	</div>	
+
+<!-- copyright (i2) --><div align="center"><a href="http://www.ucoz.ru/" title="Создать сайт бесплатно"><img style="margin:0;padding:0;border:0;" alt="Hosted by uCoz" src="http://s200.ucoz.net/img/cp/6.gif" width="80" height="15" title="Hosted by uCoz" /></a><br /></div><!-- /copyright -->
+</body>
+</html>

@@ -1,0 +1,38 @@
+<div class="container main" ng-controller="SalaryController" ng-init="salaryDataInit()">
+    <div class="row">
+        <h2>Enter your salary</h2>
+
+        <form name="salaryCalculateForm">
+            <div class="salary-wrapper">
+                <label for="salaryValue">Enter your salary</label><input type="text" id="salaryValue" name="salaryValue"
+                                                                         ng-model="user.salary"
+                                                                         ng-change="calculateSalaryToday(user)"
+                                                                         ng-pattern="/^[0-9]+$/">
+
+                <div class="error" ng-show="salaryCalculateForm.salaryValue.$error.pattern">
+                    Salary must be digits
+                </div>
+            </div>
+            <label for="monthDayOff">Enter your month day offs</label><input type="text" id="monthDayOff"
+                                                                             name="monthDayOff"
+                                                                             ng-model="user.dayOff"
+                                                                             ng-change="calculateSalaryToday(user)"
+                                                                             ng-pattern="/^([0-9]|[1][0-9]|20)$/">
+
+            <div class="error" ng-show="salaryCalculateForm.monthDayOff.$error.pattern">
+                Day offs must be digits and less 20
+            </div>
+        </form>
+        <h3 title="Salary per day {{ salaryPerDay }}">Salary for today is {{salaryForToday}}</h3>
+
+        <p>Expected salary {{ expectedSalary }}</p>
+        <p>Salary for now {{salaryForNow}}</p>
+        <button class="btn btn-primary" ng-click="calculateSalaryToday(user)">Click to update</button>
+        <button class="btn btn-primary" ng-click="realTimeCalculationClick(user)">Show in real time</button>
+    </div>
+    <div class="row">
+        <p class="app-info">
+            Version {{ application.version }}.
+        </p>
+    </div>
+</div>

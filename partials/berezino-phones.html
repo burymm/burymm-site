@@ -1,0 +1,35 @@
+<div ng-controller="BerezinoPhonesController" ng-init="phonesLoadData()" class="berezino-phones">
+    <div class="row-fluid">
+        <div class="span6">
+            <h2>Berezino phones book</h2>
+            <p>In book {{ phonesCount }} records.</p>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="span6">
+            <input type="text" placeholder="Enter phone or name" ng-model="queryString" class="searchQuery"
+                   ng-enter="searchPhones(queryString)" /> <button class="btn btn-primary"
+                                                                   ng-click="searchPhones(queryString)">Search</button>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="span6">
+            <h3>Result</h3>
+            <p class="message">
+                {{ result.message }}
+            </p>
+            <ul class="founded-phones">
+                <li ng-repeat="phone in result.phones" clip-copy="getReferralLink()" clip-click="copyLink()">
+                    <span class="phone-wrapper"> {{ phone.phone }} </span>
+                    <span class="name-wrapper" title="{{ phone.title }}"> {{ phone.title }}</span>
+                    <span class="address-wrapper" title="{{ phone.address }}"> {{ phone.address }}</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <p class="app-info">
+            Version {{ version }}.
+        </p>
+    </div>
+</div>

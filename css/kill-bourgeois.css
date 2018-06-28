@@ -1,0 +1,111 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+.comrade-statistics-table td {
+  padding-right: 10px;
+}
+.comrade-statistics-table td.critical-hit {
+  color: #cc0000;
+  font-size: 24px;
+}
+.map {
+  *zoom: 1;
+  position: relative;
+  width: 720px;
+  height: 480px;
+}
+.map .game-info {
+  position: absolute;
+  display: none;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 2000;
+}
+.map .game-info.active {
+  display: block;
+}
+.map .game-info h3 {
+  padding: 10 0 15px 0;
+  text-align: center;
+}
+.map .game-info p {
+  padding: 0 20px;
+  color: #00cc00;
+}
+.map .communal-apartment {
+  float: left;
+  width: 40px;
+  height: 480px;
+  border: 2px solid #cc0000;
+  box-sizing: border-box;
+}
+.map .battle-field {
+  float: left;
+  position: relative;
+  width: 640px;
+  height: 480px;
+  box-sizing: border-box;
+  border: 2px solid #cc0000;
+}
+.map .battle-field .red-comrade,
+.map .battle-field .bourgeois {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  background-size: 60px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.map .battle-field .red-comrade {
+  top: 0;
+  left: 0;
+  background-image: url('/img/kill_bourgeois/red_comrade.png');
+  z-index: 1000;
+}
+.map .battle-field .red-comrade.shooting {
+  background-position: 0 -60px;
+}
+.map .battle-field .bourgeois {
+  right: 0;
+  bottom: 0;
+  background-image: url('/img/kill_bourgeois/bourgeois.png');
+}
+.map .battle-field .bourgeois .bourgeois-health {
+  position: absolute;
+  padding: 2px;
+  top: 0;
+  left: 0;
+  color: #000000;
+  font: 400 10px arial;
+  background: #fff;
+}
+.map .battle-field .isHitting {
+  background-position: 0 -60px;
+}
+.map .battle-field .dead-bourgeois {
+  color: #cc0000;
+  background-position: 0 -120px;
+}
+.map .battle-field .dead-bourgeois .bourgeois-health {
+  display: none;
+}
+.map .restaurant {
+  float: left;
+  width: 40px;
+  height: 480px;
+  border: 2px solid #cc0000;
+  box-sizing: border-box;
+}

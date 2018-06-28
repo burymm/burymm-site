@@ -1,0 +1,27 @@
+<div ng-controller="MakeJSON">
+    {{ debug }}
+    <div class="row-fluid">
+        <div class="span4">
+            <input type="text" class="span12" placeholder="Enter property names through semicolons" ng-model="data.properties"/>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="span4">
+            <label for="textToJSON" class="span12">Enter text</label>
+            <textarea name="textToJSON" id="textToJSON" class="span12" cols="30" rows="10" ng-model="data.textToJSON">
+            </textarea>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="span4">
+            <button class="btn btn-primary" ng-click="convertToJSON(data)">Convert</button>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="span4">
+            <label for="textToJSON" class="span12">JSON</label>
+            <textarea name="JSON" id="JSON" class="span12" cols="30" rows="10" ng-model="data.JSON">
+            </textarea>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="wrapper" ng-controller="NoController">
+    <h2>Canvas clock</h2>
+    <p class="description">
+        This is jquery ui widget. If you want to add this widget on your page you need.
+    <ol type=1>
+        <li>Download this <a href="../js/canvas-clock.js">script</a></li>
+        <li>Add in you html document this scripts
+            <ul class="code">
+                <li>&lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js&quot;&gt;&lt;/script&gt;</li>
+                <li>&lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js&quot;&gt;&lt;/script&gt;</li>
+                <li>&lt;script src=&quot;<span class="attention">Path to you js file</span>/canvas-clock.js&quot;&gt;&lt;/script&gt;
+                </li>
+            </ul>
+        </li>
+        <li>
+            Add html elemnt into your page. This will containter for widget. On onload script write code like this
+            <ul class="code">
+                <li>
+                    $(&quot;element&quot;).canvasClock({radius : 100});
+                </li>
+            </ul>
+        </li>
+        <li>Enjoy!</li>
+    </ol>
+    </p>
+    <div id="div-canvas-clock" class="canvas-clock" ng-init="canvasClockInit()">
+    </div>
+</div>

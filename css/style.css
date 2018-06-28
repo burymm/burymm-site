@@ -1,0 +1,252 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+.comrade-statistics-table td {
+  padding-right: 10px;
+}
+.comrade-statistics-table td.critical-hit {
+  color: #cc0000;
+  font-size: 24px;
+}
+.map {
+  *zoom: 1;
+  position: relative;
+  width: 720px;
+  height: 480px;
+}
+.map .game-info {
+  position: absolute;
+  display: none;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 2000;
+}
+.map .game-info.active {
+  display: block;
+}
+.map .game-info h3 {
+  padding: 10 0 15px 0;
+  text-align: center;
+}
+.map .game-info p {
+  padding: 0 20px;
+  color: #00cc00;
+}
+.map .communal-apartment {
+  float: left;
+  width: 40px;
+  height: 480px;
+  border: 2px solid #cc0000;
+  box-sizing: border-box;
+}
+.map .battle-field {
+  float: left;
+  position: relative;
+  width: 640px;
+  height: 480px;
+  box-sizing: border-box;
+  border: 2px solid #cc0000;
+}
+.map .battle-field .red-comrade,
+.map .battle-field .bourgeois {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  background-size: 60px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.map .battle-field .red-comrade {
+  top: 0;
+  left: 0;
+  background-image: url('/img/kill_bourgeois/red_comrade.png');
+  z-index: 1000;
+}
+.map .battle-field .red-comrade.shooting {
+  background-position: 0 -60px;
+}
+.map .battle-field .bourgeois {
+  right: 0;
+  bottom: 0;
+  background-image: url('/img/kill_bourgeois/bourgeois.png');
+}
+.map .battle-field .bourgeois .bourgeois-health {
+  position: absolute;
+  padding: 2px;
+  top: 0;
+  left: 0;
+  color: #000000;
+  font: 400 10px arial;
+  background: #fff;
+}
+.map .battle-field .isHitting {
+  background-position: 0 -60px;
+}
+.map .battle-field .dead-bourgeois {
+  color: #cc0000;
+  background-position: 0 -120px;
+}
+.map .battle-field .dead-bourgeois .bourgeois-health {
+  display: none;
+}
+.map .restaurant {
+  float: left;
+  width: 40px;
+  height: 480px;
+  border: 2px solid #cc0000;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 800px) {
+  .nav-menu {
+    position: absolute;
+    top: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .nav-menu.not-showing {
+    -webkit-transform: translate(-110%);
+    /* Chrome, Safari, Opera */
+    transform: translateX(-110%);
+  }
+}
+@font-face {
+  font-family: 'ro';
+  src: url('/fonts/red-october/red-october-regular.ttf');
+}
+@font-face {
+  font-family: 'ro-bold';
+  src: url('/fonts/red-october/red-october-fat.ttf');
+}
+.page-wrapper {
+  background: #000000;
+}
+.page-wrapper h1,
+.page-wrapper h2,
+.page-wrapper h3,
+.page-wrapper h4 {
+  font-family: 'ro-bold';
+  color: #ff0000;
+}
+.page-wrapper li {
+  list-style: none;
+}
+.page-wrapper a {
+  color: #00ff00;
+}
+.page-wrapper a:hover {
+  color: #ff0000;
+  text-decoration: none;
+}
+.page-wrapper input {
+  height: 25px;
+}
+.page-wrapper ul,
+.page-wrapper li,
+.page-wrapper p,
+.page-wrapper a,
+.page-wrapper span,
+.page-wrapper div {
+  color: #00ff00;
+}
+header {
+  background: url('pics/communists.png') 0 100px no-repeat;
+  background-size: 100px;
+  padding: 100px 0 100px 150px;
+}
+.nav-menu li a {
+  font: 400 18px 'ro';
+}
+.app-info {
+  font-size: 10px;
+}
+/* canvas clock styles */
+.canvas-clock {
+  float: left;
+  background: #fff;
+}
+/* end canvas clock styles */
+/* name converter */
+.btn-clipboard {
+  position: absolute;
+  display: none;
+}
+.converter-form {
+  padding-left: 40px;
+}
+.converter-form .btn-restore {
+  margin-top: -11px;
+}
+.relative {
+  position: relative;
+}
+/* end name converter */
+/* berezino phones */
+.berezino-phones .searchQuery {
+  margin-bottom: 0;
+}
+.berezino-phones .founded-phones {
+  min-width: 550px;
+}
+.berezino-phones .founded-phones li {
+  *zoom: 1;
+  height: 20px;
+}
+.berezino-phones .founded-phones li:hover {
+  background: #333333;
+}
+.berezino-phones .founded-phones .phone-wrapper {
+  float: left;
+  display: block;
+  padding-right: 10px;
+  color: #00ff00;
+}
+.berezino-phones .founded-phones .name-wrapper {
+  float: left;
+  display: block;
+  padding-right: 10px;
+  max-width: 50%;
+  color: #00bb00;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.berezino-phones .founded-phones .address-wrapper {
+  float: left;
+  display: block;
+  max-width: 30%;
+  color: #007700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* end berezino phones  */
+/*  zombie */
+.field {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+.battle-field {
+  width: 300px;
+  height: 300px;
+  background-color: #ccc;
+}
+.human {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  color: #006600;
+}
+/* end zombie*/

@@ -1,0 +1,83 @@
+<div ng-controller="KillBourgeoisGameController" ng-keydown="keyPressed($event, otherParams)" ng-init="Init()">
+    <shortcut></shortcut>
+    <h2>Kill bourgeois</h2>
+
+    <button ng-click="game.buyAmmo(5)">Buy 5 ammo for {{ game.ammoCost * 5}} rub</button>
+    <button ng-click="game.buyAmmo(50)">Buy 50 ammo for {{ game.ammoCost * 50 }} rub</button>
+    <div class="map">
+        <div ng-class="{ 'active': game.isPause }" class="game-info">
+            <h3>{{ game.info.header }}</h3>
+
+            <p ng-repeat="row in game.info.content">{{ row }}</p>
+        </div>
+        <div class="communal-apartment">
+            <span class="comrades">{{redComrade.ammo}}</span>
+        </div>
+        <div class="battle-field">
+            <div class="red-comrade" ng-class="{'shooting': redComrade.isShooting}" style="left:{{ redComrade.getX() }}px; top:{{ redComrade.getY() }}px">
+
+            </div>
+            <div class="bourgeois" ng-class="{'dead-bourgeois': bourgeois.dead, 'isHitting': bourgeois.isHitting}" style="left:{{ bourgeois.getX() }}px; top:{{ bourgeois.getY() }}px" ng-repeat="bourgeois in bourgeoisList">
+              <span class="bourgeois-health">{{ bourgeois.life }}</span>
+            </div>
+        </div>
+        <div class="restaurant">
+            <span class="bourgeois">5</span>
+        </div>
+    </div>
+
+
+    <div class="comrade-statistics">
+        <table class="comrade-statistics-table">
+            <tr>
+                <td>Comrades </td>
+                <td>{{ game.proletarians }}</td>
+                <td>Money </td>
+                <td>{{ redComrade.money }} rub</td>
+                <td>Kills </td>
+                <td>{{ game.kills}}</td>
+                <td></td>
+                <td>
+
+                </td>
+            </tr>
+            <tr ng-repeat="type in redComrade.statistics.weaponTypes">
+                <td>Damage {{type.name}}</td>
+                <td>[{{ type.damage.min }} - {{ type.damage.max}}]</td>
+                <td>Critical chance</td>
+                <td>[{{ type.damage.criticalChance }}]</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Damage</td>
+                <td>[{{ redComrade.damage.min }} - {{ redComrade.damage.max}}]</td>
+                <td>Last hit</td>
+                <td ng-class="{'critical-hit' : redComrade.isLastHitCritical }">{{redComrade.lastHit}}</td>
+                <td>Experience</td>
+                <td>{{ redComrade.exp }}/{{ redComrade.nextLevel }}</td>
+                <td>Level</td>
+                <td>{{ redComrade.level }}</td>
+            </tr>
+            <tr>
+                <td>Critical chance</td>
+                <td>[{{ redComrade.criticalChance }}]</td>
+                <td>Ammo</td>
+                <td>[{{ redComrade.ammo }}]</td>
+                <td>Active weapon</td>
+                <td>[ {{redComrade.activeWeapon.name}} ]</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <p class="description">
+        You should kill bourgeois. They want get proletarians money.<br />
+        Key "p" to pause and help.
+        If bourgeois get all your money you lose. <br />
+    </p>
+</div>

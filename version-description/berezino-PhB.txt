@@ -1,0 +1,7 @@
+v. 3.04
+- fix search phones by phone bug
+- fix search phones by department
+v. 3.03
+- Update showing result
+- Add search by press enter button.
+- Add message with records count

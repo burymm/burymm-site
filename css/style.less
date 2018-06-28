@@ -1,0 +1,184 @@
+@import "kill-bourgeois";
+@import "responsive";
+
+@font-face {
+  font-family: 'ro';
+  src: url('/fonts/red-october/red-october-regular.ttf');
+}
+
+@font-face {
+  font-family: 'ro-bold';
+  src: url('/fonts/red-october/red-october-fat.ttf');
+}
+
+@highlightColor: #f00;
+@mainColor: #0f0;
+@mainColorDark: #0b0;
+@mainColorDarker: #070;
+@backColor: #000;
+@darkGray: #333;
+
+.page-wrapper {
+  background: @backColor;
+
+  h1, h2, h3, h4 {
+    font-family: 'ro-bold';
+    color: @highlightColor;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    color: @mainColor;
+
+    &:hover {
+      color: @highlightColor;
+      text-decoration: none;
+    }
+  }
+
+  input {
+    height: 25px
+  }
+
+  ul, li, p, a, span, div {
+    color: @mainColor;
+  }
+
+}
+
+header {
+  background: url('pics/communists.png') 0 100px no-repeat;
+  background-size: 100px;
+  padding: 100px 0 100px 150px;
+}
+
+.nav-menu {
+  li {
+    a {
+      font: 400 18px 'ro';
+
+
+    }
+  }
+
+}
+
+
+.app-info {
+  font-size: 10px;
+}
+
+/* canvas clock styles */
+
+.canvas-clock {
+  float: left;
+  background: #fff;
+}
+
+/* end canvas clock styles */
+
+/* name converter */
+.btn-clipboard {
+  position: absolute;
+  display: none;
+}
+
+.converter-form {
+  padding-left: 40px;
+
+  .btn-restore {
+    margin-top: -11px;
+  }
+}
+
+.relative {
+  position: relative;
+}
+
+/* end name converter */
+
+/* berezino phones */
+
+.berezino-phones {
+
+  .searchQuery {
+    margin-bottom: 0;
+  }
+
+  .founded-phones {
+
+    min-width: 550px;
+
+    li {
+      .clearfix;
+      height: 20px;
+
+      //background: @darkGray;
+      &:hover {
+        background: @darkGray;
+      }
+    }
+
+    .phone-wrapper {
+      float: left;
+      display: block;
+      padding-right: 10px;
+      color: @mainColor;
+
+    }
+
+    .name-wrapper {
+      float: left;
+      display: block;
+      padding-right: 10px;
+      max-width: 50%;
+      color: @mainColorDark;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .address-wrapper {
+      float: left;
+      display: block;
+      max-width: 30%;
+      color: @mainColorDarker;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+    }
+  }
+}
+
+/* end berezino phones  */
+
+/*  zombie */
+
+@cell-size: 10px;
+@filed-size: @cell-size * 30;
+@human-color: #060;
+
+
+.field {
+  position: relative;
+  width: @filed-size;
+  height: @filed-size;
+}
+
+.battle-field {
+  width: @filed-size;
+  height: @filed-size;
+  background-color: #ccc;
+}
+
+.human {
+  position: absolute;
+  width: @cell-size;
+  height: @cell-size;
+  color: @human-color;
+}
+/* end zombie*/

@@ -1,0 +1,317 @@
+[
+    {
+        "tac": "86988100",
+        "manufacturer": "ZOPO",
+        "model": "ZP980"
+    },
+    {
+        "tac": "01124500",
+        "manufacturer": "Apple",
+        "model": "iPhone"
+    },
+    {
+        "tac": "01130000",
+        "manufacturer": "Apple",
+        "model": "iPhone model MA712LL"}
+    ,
+    {
+        "tac": "01136400",
+        "manufacturer": "Apple",
+        "model": "iPhone"
+    },
+    {
+        "tac": "01154600",
+        "manufacturer": "Apple",
+        "model": "iPhone model MB384LL"
+    },
+    {
+        "tac": "01161200",
+        "manufacturer": "Apple",
+        "model": "iPhone 3G"
+    },
+    {
+        "tac": "01193400",
+        "manufacturer": "Apple",
+        "model": "iPhone 3G"
+    },
+    {
+        "tac": "01180800",
+        "manufacturer": "Apple",
+        "model": "iPhone 3G model MB704LL"
+    },
+    {
+        "tac": "01181200",
+        "manufacturer": "Apple",
+        "model": "iPhone 3G model MB496B"
+    },
+    {
+        "tac": "01174400",
+        "manufacturer": "Apple",
+        "model": "iPhone 3G model MB496RS"
+    },
+    {
+        "tac": "01194800",
+        "manufacturer": "Apple",
+        "model": "iPhone 3GS"
+    },
+    {
+        "tac": "01215800",
+        "manufacturer": "Apple",
+        "model": "iPhone 3GS"
+    },
+    {
+        "tac": "01216100",
+        "manufacturer": "Apple",
+        "model": "iPhone 3GS"
+    },
+    {
+        "tac": "01226800",
+        "manufacturer": "Apple",
+        "model": "iPhone 3GS"
+    },
+    {
+        "tac": "01215900",
+        "manufacturer": "Apple",
+        "model": "iPhone 3GS model MC131B"
+    },
+    {
+        "tac": "01241700",
+        "manufacturer": "Apple",
+        "model": "iPhone 4"
+    },
+    {
+        "tac": "01233800",
+        "manufacturer": "Apple",
+        "model": "iPhone 4 model MC610LL"
+    },
+    {
+        "tac": "01233700",
+        "manufacturer": "Apple",
+        "model": "iPhone 4 model MC603B"
+    },
+    {
+        "tac": "01233600",
+        "manufacturer": "Apple",
+        "model": "iPhone 4 model MC608LL"
+    },
+    {
+        "tac": "01243000",
+        "manufacturer": "Apple",
+        "model": "iPhone 4 model MC603KS"
+    },
+    {
+        "tac": "01254200",
+        "manufacturer": "Apple",
+        "model": "iPhone 4"
+    },
+    {
+        "tac": "01300600",
+        "manufacturer": "Apple",
+        "model": "iPhone 4S model MD260C"
+    },
+    {
+        "tac": "01332700",
+        "manufacturer": "Apple",
+        "model": "iPhone 5 model MD642C"
+    },
+    {
+        "tac": "35896704",
+        "manufacturer": "HTC",
+        "model": "Desire S"
+    },
+    {
+        "tac": "35902803",
+        "manufacturer": "HTC",
+        "model": "Wildfire"
+    },
+    {
+        "tac": "35918804",
+        "manufacturer": "HTC",
+        "model": "One X"
+    },
+    {
+        "tac": "35714904",
+        "manufacturer": "Huawei",
+        "model": "e398u-15 lte stick"
+    },
+    {
+        "tac": "35191405",
+        "manufacturer": "Motorola",
+        "model": "Defy Mini"
+    },
+    {
+        "tac": "35351200",
+        "manufacturer": "Motorola",
+        "model": "V300"
+    },
+    {
+        "tac": "35148420",
+        "manufacturer": "Nokia",
+        "model": "3410 (NHM-2NX)"
+    },
+    {
+        "tac": "35154900",
+        "manufacturer": "Nokia",
+        "model": "6310i (NPL-1)"
+    },
+    {
+        "tac": "35151304",
+        "manufacturer": "Nokia",
+        "model": "E72-1 (RM-530)"
+    },
+    {
+        "tac": "35274901",
+        "manufacturer": "Nokia",
+        "model": "6233"
+    },
+    {
+        "tac": "35291402",
+        "manufacturer": "Nokia",
+        "model": "6210 Navigator"
+    },
+    {
+        "tac": "35566600",
+        "manufacturer": "Nokia",
+        "model": "6230"
+    },
+    {
+        "tac": "35421803",
+        "manufacturer": "Nokia",
+        "model": "5310 (RM-303)"
+    },
+    {
+        "tac": "35433004",
+        "manufacturer": "Nokia",
+        "model": "C5-00 (RM-645)"
+    },
+    {
+        "tac": "35524803",
+        "manufacturer": "Nokia",
+        "model": "2330c-2 (RM-512)"
+    },
+    {
+        "tac": "35685702",
+        "manufacturer": "Nokia",
+        "model": "6300"
+    },
+    {
+        "tac": "35828103",
+        "manufacturer": "Nokia",
+        "model": "6303C"
+    },
+    {
+        "tac": "35693803",
+        "manufacturer": "Nokia",
+        "model": "N900"
+    },
+    {
+        "tac": "35694603",
+        "manufacturer": "Nokia",
+        "model": "2700"
+    },
+    {
+        "tac": "35699601",
+        "manufacturer": "Nokia",
+        "model": "N95"
+    },
+    {
+        "tac": "35700804",
+        "manufacturer": "Nokia",
+        "model": "C1"
+    },
+    {
+        "tac": "35739804",
+        "manufacturer": "Nokia",
+        "model": "N8"
+    },
+    {
+        "tac": "35788104",
+        "manufacturer": "Nokia",
+        "model": "N950"
+    },
+    {
+        "tac": "35836800",
+        "manufacturer": "Nokia",
+        "model": "6230i"
+    },
+    {
+        "tac": "35837800",
+        "manufacturer": "Nokia",
+        "model": "N6030 (RM-74)"
+    },
+    {
+        "tac": "35935003",
+        "manufacturer": "Nokia",
+        "model": "2720a-2 (RM-519)"
+    },
+    {
+        "tac": "35357800",
+        "manufacturer": "Samsung",
+        "model": "SGH-A800"
+    },
+    {
+        "tac": "35679404",
+        "manufacturer": "Samsung",
+        "model": "Galaxy Mini (GT-S5570)"
+    },
+    {
+        "tac": "35733104",
+        "manufacturer": "Samsung",
+        "model": "Galaxy Gio"
+    },
+    {
+        "tac": "35853704",
+        "manufacturer": "Samsung",
+        "model": "Galaxy SII"
+    },
+    {
+        "tac": "35226005",
+        "manufacturer": "Samsung",
+        "model": "Galaxy SIII"
+    },
+    {
+        "tac": "35979504",
+        "manufacturer": "Samsung",
+        "model": "Galaxy Note"
+    },
+    {
+        "tac": "35171005",
+        "manufacturer": "Sony Ericsson",
+        "model": "Xperia S"
+    },
+    {
+        "tac": "35238402",
+        "manufacturer": "Sony Ericsson",
+        "model": "K770i"
+    },
+    {
+        "tac": "35511405",
+        "manufacturer": "Sony Ericsson",
+        "model": "Xperia U"
+    },
+    {
+        "tac": "35851004",
+        "manufacturer": "Sony Ericsson",
+        "model": "Xperia Active"
+    },
+    {
+        "tac": "35405600",
+        "manufacturer": "Wavecom",
+        "model": "M1306B"
+    },
+    {
+        "tac": "35837501",
+        "manufacturer": "XDA",
+        "model": "Orbit 2"
+    },
+    {
+        "tac": "35316004",
+        "manufacturer": "ZTE",
+        "model": "Blade"
+    },
+    {
+        "tac": "35972100",
+        "manufacturer": "Lobster",
+        "model": "544"
+    }
+]

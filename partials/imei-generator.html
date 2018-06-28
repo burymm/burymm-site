@@ -1,0 +1,11 @@
+<div class="container main-container" ng-controller="IMEIGenerator" ng-init="loadData()">
+    <h2>IMEI generator</h2>
+    <div>
+    <label for="tacList">Select model or enter tac number</label>
+        <select name="tacList" id="tacList" ng-options="tacs.tac as tacs.model for tacs in tacList" ng-model="tac" ng-change="updateIMEI()"></select>
+    </div>
+    <div>
+        <input type="text" placeholder="TAC 8 digits" ng-change="updateIMEI()" ng-model="tac" ng-pattern="/^[0-9]+$/"/>
+    </div>
+    <h3>IMEI {{ imei }}</h3>
+</div>

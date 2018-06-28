@@ -1,0 +1,16 @@
+<div ng-controller="ThanksController" ng-init="loadData()">
+    <div class="row-fluid">
+        <div class="span6">
+            <h3>Thanks to</h3>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="span6">
+            <ul>
+                <li ng-repeat="person in persons">
+                    {{ person.name}} for {{ person.for }}
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

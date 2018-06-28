@@ -1,0 +1,16 @@
+body {background: #000;}
+h1, h2, h3, h4 {color : #f00;}
+h1 {font: 700 22px Arial;}
+a, .attention {color: #f00;}
+li, p, label {color: #0f0; font: 400 16px Arial; }
+ul {list-style : none;}
+
+
+nav {}
+nav ul li {color: #f00; font: 700 12px Verdana;}
+.wrapper {margin: 0 0 0 150px;}
+
+p.description {font: 400 14px Arial; font-style: italic;}
+.code {margin: 15px; padding: 10px; background: #333;}
+#div-canvas-clock {float: left; background: #fff;}
+

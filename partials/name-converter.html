@@ -1,0 +1,35 @@
+<div class="container main-container" ng-controller="ConverterController">
+    <div class="row">
+        <h2>Name converter</h2>
+        <form name="convertForm" class="converter-form">
+            <div class="row">
+                <div class="row relative">
+                    <span ng-mouseover="showClipboard()" ng-mouseout="hideClipboard()">
+                        <button class="btn btn-mini btn-clipboard" ng-class="{ show: isShowedClipboard }" ng-click="copyToClipboard($event, param.convertedName)">Copy to clipboard</button>
+                        <input type="text" class="input-large" placeholder="Enter name" value="Alex"
+                               name="convertName" ng-model="param.convertName" ng-pattern="param.namePattern" ng-change="saveName(param)"/>
+                    </span>
+                    <div class="error" ng-show="convertForm.convertName.$error.pattern">
+                        Enter valid name
+                    </div>
+                    <button class="btn btn-small btn-restore" ng-click="restoreName(param)">Restore</button>
+                </div>
+                <div class="row">
+                    <label for="changesCount">
+                        Changes count
+                    </label>
+                    <input type="number" name="changesCount" id="changesCount" ng-model="param.changes"
+                           ng-pattern="/^[0-9]+$/"/>
+
+                    <div class="error" ng-show="convertForm.changesCount.$error.pattern">
+                        Enter valid number
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <button class="btn btn-primary" ng-click="convert(param)">Convert</button>
+            </div>
+        </form>
+    </div>
+</div>
